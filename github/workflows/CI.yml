@@ -6,13 +6,13 @@ on:
 
 jobs:
   train-and-test:
-   runs-on: ubuntu-latest
-   steps:
+    runs-on: ubuntu-latest
+    steps:
     - name: Download project code
       uses: actions/checkout@v4
     - name: Setup Python
       uses: actions/setup-python@v5
-       with:
+      with:
         python-version: "3.11"
     - name: Install librarries
       run: pip install -r requirements.txt
